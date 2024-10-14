@@ -1,5 +1,11 @@
 <div class="container">
-  <app-header></app-header>
+  <ng-container *ngIf="isSeller; else userHeader">
+    <app-seller-header></app-seller-header>
+  </ng-container>
+  <ng-template #userHeader>
+    <app-header></app-header>
+  </ng-template>
   <router-outlet></router-outlet>
+  
   <app-footer></app-footer>
 </div>

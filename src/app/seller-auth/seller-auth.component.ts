@@ -22,9 +22,11 @@ export class SellerAuthComponent implements OnInit {
   login(data: signUp): void {
     this.seller.userLogin(data);
     this.seller.isLoginError.subscribe((isError)=>{
+      
       if(isError){
         this.authError="Email or password is not correct";
       }
+      
     })
   }
   openLogin(){

@@ -1,7 +1,69 @@
-h1{
-    color: blueviolet;
+/* Add Product Page Styles */
+.add-product {
+    background-color: #121212; /* Dark background */
+    color: #fff; /* Light text for contrast */
     text-align: center;
+    padding: 40px 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Soft corners for the container */
+    max-width: 600px; /* Limit the width for a better layout */
+    margin: auto; /* Center the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
 }
-.add-product{
+
+h1 {
+    color: #ff4081; /* Accent color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Form Input Styles */
+.form-input {
+    height: 35px;
+    margin-bottom: 20px;
+    border: 1px solid blueviolet; /* Border color for inputs */
+    padding-left: 15px; /* Padding inside input */
+    color: blueviolet; /* Text color for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    background-color: #1e1e1e; /* Dark background for inputs */
+}
+
+/* Button Styles */
+.form-button {
+    height: 35px;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    background-color: #1e1e1e; /* Dark background for buttons */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.form-button:hover {
+    background-color: blueviolet; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Message Paragraph Styles */
+.message-p {
+    color: green;
     text-align: center;
+    margin-bottom: 20px; /* Space below the message */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .add-product {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+    
+    h1 {
+        font-size: 28px; /* Adjust heading size for mobile */
+    }
+    
+    .form-input {
+        height: 30px; /* Adjust input height for mobile */
+    }
+    
+    .form-button {
+        height: 30px; /* Adjust button height for mobile */
+    }
 }

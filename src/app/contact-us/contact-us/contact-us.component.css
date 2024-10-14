@@ -1,27 +1,28 @@
-.seller-auth {
+.contact-us {
     margin-bottom: 100px;
-    text-align: center; /* Center align for the form */
+    text-align: center;
     background-color: #1e1e1e; /* Dark background for the form */
     padding: 50px 0;
-    border-radius: 10px; /* Rounded corners for the section */
+    border-radius: 10px; /* Slightly rounded corners for the section */
 }
 
-.seller-auth h1 {
+.contact-us h1 {
     margin-top: 50px;
     margin-bottom: 40px;
     color: #ff4081; /* Accent color for the heading */
     font-size: 32px;
 }
 
-.seller-auth form {
+.contact-us form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 600px;
+    max-width: 600px; /* Limiting the width for better layout */
     margin: 0 auto;
 }
 
-.seller-auth input {
+.contact-us input,
+.contact-us textarea {
     width: 80%;
     max-width: 400px;
     padding: 15px;
@@ -34,58 +35,45 @@
     transition: border 0.3s ease; /* Smooth border color transition */
 }
 
-.seller-auth input:focus {
+.contact-us input:focus,
+.contact-us textarea:focus {
     outline: none;
     border-color: #e040fb; /* Lighter accent on focus */
 }
 
-.seller-auth button {
+.contact-us button {
     background-color: #ff4081;
     color: #fff;
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover */
     font-size: 16px;
 }
 
-.seller-auth button:hover {
-    background-color: #e040fb;
-    transform: scale(1.05); /* Slight grow effect on hover */
+.contact-us button:hover {
+    background-color: #e040fb; /* Lighter shade on hover */
+    transform: scale(1.05); /* Slight grow effect */
 }
 
-.seller-auth button:active {
-    transform: scale(1);
+.contact-us button:active {
+    transform: scale(1); /* Reset scale on click */
 }
 
-.seller-auth a {
-    color: #e040fb;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease;
-    margin-top: 20px;
-}
-
-.seller-auth a:hover {
-    color: #ff4081;
-}
-
-/* Error message styling */
-.error-p {
-    color: #ff4081;
-    font-size: 14px;
-    margin-bottom: 10px;
+.contact-us textarea {
+    height: 150px; /* Set a default height for the textarea */
+    resize: vertical; /* Allow resizing only vertically */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .seller-auth h1 {
+    .contact-us h1 {
         font-size: 28px;
     }
 
-    .seller-auth input {
+    .contact-us input,
+    .contact-us textarea {
         width: 90%;
     }
 }

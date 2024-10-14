@@ -1,0 +1,33 @@
+/* Container Styling */
+.container {
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+    background-color: #121212; /* Dark background for the container */
+    color: #fff; /* Light text color for contrast */
+    min-height: 100vh; /* Ensure it covers full height */
+    position: relative; /* Relative positioning for child elements */
+    overflow: hidden; /* Hide overflow to maintain design */
+}
+
+/* Optional: Responsive Adjustments for Container */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+}
+/* Header Styles */
+app-header, app-seller-header {
+    background-color: #1e1e1e; /* Dark background for the header */
+    color: #ff4081; /* Accent color for text */
+    padding: 10px 20px; /* Padding for header */
+}
+
+/* Footer Styles */
+app-footer {
+    background-color: #1e1e1e; /* Dark background for the footer */
+    color: #ff4081; /* Accent color for footer text */
+    text-align: center;
+    padding: 10px 0; /* Padding for footer */
+}
+

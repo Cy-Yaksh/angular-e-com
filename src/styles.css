@@ -1,55 +1,96 @@
+/* Global Styles */
 body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
   font-family: sans-serif;
+  background-color: #121212; /* Dark background for the whole app */
+  color: #fff; /* Light text color for contrast */
 }
+
+/* Container Styles */
 .container {
   margin-left: 5%;
   margin-right: 5%;
+  padding: 20px; /* Optional padding */
+  background-color: #1e1e1e; /* Dark background for the container */
+  border-radius: 8px; /* Rounded corners for the container */
 }
+
+/* Form Styles */
 .common-form {
   display: flex;
   flex-direction: column;
   width: 300px;
   margin: auto;
 }
+
 .form-input {
   height: 35px;
   margin-bottom: 20px;
-  border: 1px solid blueviolet;
+  border: 1px solid blueviolet; /* Adjust if needed */
   padding-left: 15px;
-  color: blueviolet;
+  color: blueviolet; /* Text color for inputs */
+  background-color: #2a2a2a; /* Dark background for input fields */
 }
+
 .form-button {
   height: 35px;
-  border: 1px solid blueviolet;
-  color: blueviolet;
+  border: 1px solid blueviolet; /* Adjust if needed */
+  color: blueviolet; /* Text color for buttons */
+  background-color: #333; /* Dark background for buttons */
   cursor: pointer;
 }
-.error-p{
+
+.error-p {
   color: red;
 }
 
-.message-p{
+.message-p {
   color: green;
   text-align: center;
 }
 
+/* Carousel Styles */
 .carousel-caption {
-  background-color: #0000007d;
+  background-color: #0000007d; /* Semi-transparent black for captions */
   border-radius: 10px;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon{
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   background-color: black;
   border-radius: 5px;
 }
 
-.invalid-input{
+/* Validation Styles */
+.invalid-input {
   color: red;
   font-size: 12px;
-  margin-top:-20px
+  margin-top: -20px;
 }
-button:disabled{
+
+button:disabled {
   cursor: not-allowed;
 }
-.max-width{
+
+/* Max Width Utility */
+.max-width {
   width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+
+  .common-form {
+      width: 100%; /* Make the form full width on smaller screens */
+  }
+
+  .form-input, .form-button {
+      height: 30px; /* Smaller height for inputs/buttons on mobile */
+      font-size: 14px; /* Smaller font size */
+  }
 }

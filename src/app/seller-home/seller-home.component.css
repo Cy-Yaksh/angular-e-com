@@ -1,17 +1,126 @@
-table{
-    text-align: left;
-    color: blueviolet;
-    border-collapse: collapse;
+/* Product List Wrapper */
+.product-list {
+    padding: 40px 20px;
+    background-color: #121212; /* Dark background for the seller page */
+    color: #fff; /* Light text color for contrast */
+    text-align: center;
 }
-img{
+
+.product-list h1 {
+    font-size: 48px;
+    color: #ff4081; /* Accent color for the page heading */
+    margin-bottom: 40px;
+}
+
+.message-p {
+    color: #ff4081;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Table Container for Responsiveness */
+.table-container {
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: #1e1e1e; /* Dark background for table */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    border: 1px solid #333; /* Darker borders */
+    padding: 15px;
+    min-width: 160px; /* Minimum width for table cells */
+}
+
+table th {
+    background-color: #333; /* Darker header background */
+    color: #ff4081; /* Accent color for table headers */
+    font-size: 16px;
+}
+
+table td {
+    background-color: #2a2a2a; /* Dark background for table rows */
+}
+
+table td img {
     height: 100px;
     width: 100px;
+    border-radius: 8px; /* Soft corners for images */
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
 }
-table td , table th{
-    border: 1px solid blueviolet;
-    padding: 10px;
-    min-width: 160pxs;
+
+table td img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
-.adjust-update-link{
+
+/* Action Buttons */
+.fa-icon {
+    color: #ff4081; /* Accent color for action icons */
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.fa-icon:hover {
+    transform: scale(1.2); /* Enlarge icons on hover */
+}
+
+.adjust-update-link {
     margin-left: 10px;
+}
+
+.adjust-update-link a {
+    color: #ff4081; /* Accent color for edit icon */
+    text-decoration: none;
+}
+
+.adjust-update-link a:hover .fa-icon {
+    transform: scale(1.2); /* Enlarge edit icon on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    table td, table th {
+        padding: 10px;
+        font-size: 14px;
+        min-width: 120px; /* Adjust minimum width for smaller screens */
+    }
+
+    .product-list h1 {
+        font-size: 36px;
+    }
+
+    table td img {
+        height: 80px; /* Smaller image size for mobile */
+        width: 80px;
+    }
+}
+
+/* Additional Mobile Adjustments */
+@media (max-width: 480px) {
+    .product-list {
+        padding: 20px 10px; /* Reduce padding on small screens */
+    }
+
+    table td, table th {
+        font-size: 12px; /* Smaller font size for smaller screens */
+    }
+
+    .product-list h1 {
+        font-size: 30px; /* Smaller heading size for mobile */
+    }
+
+    .message-p {
+        font-size: 16px; /* Smaller message font for mobile */
+    }
 }

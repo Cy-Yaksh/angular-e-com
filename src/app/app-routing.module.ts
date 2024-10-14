@@ -22,19 +22,21 @@ const routes: Routes = [
     component: SellerAuthComponent,
     path: 'seller-auth',
   },
+  { path: 'seller-home', component: SellerHomeComponent },
   {
     component:SellerHomeComponent,
     path:'seller-home',
-    canActivate:[AuthGuard]
+    canMatch:[AuthGuard]
   },{
     component:SellerAddProductComponent,
     path:'seller-add-product',
-    canActivate:[AuthGuard]
+    canMatch:[AuthGuard]
   },{
     component:SellerUpdateProductComponent,
     path:'seller-update-product/:id',
     canActivate:[AuthGuard]
   },
+  { path: 'contact-us', loadChildren: () => import('./contact-us/contact-us.module').then(m => m.ContactUsModule) }, // Lazy load ContactUsModule
   {
     component: SearchComponent,
     path:'search/:query'
