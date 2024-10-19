@@ -1,7 +1,8 @@
 [build]
- base = "angular-e-com"
- command = "npm run build:prod"
- publish = "dist/browser"
+base = "/"
+publish = "dist/angular-e-com"  # This should point to your output directory
+command = "npm run build"
+
 
 
  [[redirects]]
