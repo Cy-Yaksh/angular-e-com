@@ -1,6 +1,6 @@
-/* Carousel Styling - unchanged */
+/* Carousel Styling */
 .picsum-img-wrapper {
-    background-color: #1e1e1e;
+    background: #1e1e1e;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -8,9 +8,9 @@
 .product-header-image {
     object-fit: contain;
     width: 100%;
-    height: 600px;
+    max-height: 600px;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s;
 }
 
 .product-header-image:hover {
@@ -19,40 +19,37 @@
 
 .carousel-caption h3 {
     color: #ff4081;
-    font-size: 36px;
+    font-size: 2rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .carousel-caption p {
     color: #e0e0e0;
-    font-size: 16px;
+    font-size: 1rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 /* Product List Styling */
 .product-list-wrapper {
-    padding: 50px 0;
-    background-color: #121212;
+    padding: 3rem 0;
+    background: #121212;
     color: #fff;
     text-align: center;
 }
 
 .product-list-wrapper h1 {
     color: #ff4081;
-    font-size: 48px;
-    margin-bottom: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
-/* Enhanced Product Item Styling */
+/* Product Item Styling */
 .product-item {
-    background-color: #2a2a2a;
+    background: #2a2a2a;
     border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    margin-bottom: 30px; /* Ensure space between items */
+    margin-bottom: 30px;
 }
 
 .product-item:hover {
@@ -62,126 +59,75 @@
 
 .product-item img {
     width: 100%;
-    height: 300px;
+    max-height: 300px;
     object-fit: contain;
     border-radius: 15px 15px 0 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s;
 }
 
 .product-item img:hover {
     opacity: 0.9;
 }
 
-/* Updated Product Details */
+/* Product Details */
 .product-details {
-    padding: 20px;
-    background-color: #1e1e1e;
+    padding: 1.25rem;
+    background: #1e1e1e;
     border-top: 1px solid #333;
 }
 
 .product-details h6 {
     color: #ff4081;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
     margin-bottom: 10px;
     text-align: center;
 }
 
-.product-price h6,
-.product-color h6 {
-    color: #bbb;
-    font-size: 16px;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-/* Enhanced Product Footer Styling */
+/* Product Footer */
 .product-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    background-color: #1e1e1e;
+    padding: 1rem;
+    background: #1e1e1e;
     border-radius: 0 0 15px 15px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .product-footer a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
+    padding: 0.625rem 1.25rem;
     background: linear-gradient(135deg, #ff4081, #ff6d9e);
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 10px rgba(255, 64, 129, 0.3);
 }
 
 .product-footer a:hover {
-    background: linear-gradient(135deg, #ff6d9e, #ff4081);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 64, 129, 0.5);
 }
 
 /* Responsive Adjustments */
-@media (max-width: 992px) {
-    .product-item {
-        margin-bottom: 30px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .product-footer {
-        padding: 10px;
-        flex-direction: column;
-    }
-
-    .product-footer a {
-        margin-bottom: 10px;
-        width: 100%;
-        text-align: center;
-    }
-}
-
 @media (max-width: 768px) {
     .product-header-image {
-        height: 300px;
+        max-height: 300px;
     }
 
     .product-item img {
-        height: 220px;
-    }
-
-    .product-list-wrapper h1 {
-        font-size: 36px;
+        max-height: 220px;
     }
 
     .product-footer a {
-        padding: 8px 15px;
-        font-size: 13px;
+        padding: 0.5rem 1rem;
     }
 }
 
 @media (max-width: 576px) {
-    .product-item {
-        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-    }
-
     .product-footer a {
-        font-size: 12px;
-        padding: 6px 12px;
+        padding: 0.375rem 0.75rem;
     }
 
     .product-details h6 {
-        font-size: 18px;
-    }
-
-    .product-price h6,
-    .product-color h6 {
-        font-size: 14px;
+        font-size: 1.125rem;
     }
 }
