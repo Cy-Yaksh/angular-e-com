@@ -7,11 +7,28 @@
   background-color: #121212; /* Dark background for the header */
 }
 
+.logo a {
+  color: white !important; /* Force color change */
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none; /* Remove default link underline */
+}
+
+.logo a:hover {
+  color: #ff4081 !important; /* Force hover color change */
+  transform: scale(1.1);
+}
+
 /* Title Styles */
 .nav h1 {
   color: #ff4081; /* Accent color for the title */
   margin: 0;
   font-size: 40px;
+  text-decoration-color: aqua;
 }
 
 /* Search Bar Styles */

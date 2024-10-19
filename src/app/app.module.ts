@@ -21,6 +21,7 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { SellerHeaderComponent } from './seller-header/seller-header.component';
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { SellerHeaderComponent } from './seller-header/seller-header.component';
     CartPageComponent,
     CheckoutComponent,
     MyOrdersComponent,
-    SellerHeaderComponent
+    SellerHeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +47,9 @@ import { SellerHeaderComponent } from './seller-header/seller-header.component';
     FormsModule,
     HttpClientModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

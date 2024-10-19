@@ -103,6 +103,15 @@
       "description": "Gaming laptop with AMD Ryzen and RTX 3060",
       "image": "https://m.media-amazon.com/images/I/81VjxB9NhnL._AC_UF1000,1000_QL80_.jpg",
       "id": "8"
+    },
+    {
+      "id": "4b53",
+      "name": "I phone 16 pro",
+      "price": "119900",
+      "category": "mobile",
+      "color": "black",
+      "description": "apple product with 256gb rom and 8 gb ram",
+      "image": "https://cdn1.smartprix.com/rx-iZh5QXP4l-w420-h420/apple-iphone-16-pro.jpg"
     }
   ],
   "users": [
