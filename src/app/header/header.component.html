@@ -15,7 +15,6 @@
   <button class="hamburger" (click)="toggleMenu()">
     <div></div>
     <div></div>
-    
     <div></div>
   </button>
 
@@ -26,13 +25,15 @@
       <li><a routerLink="my-orders">My Orders</a></li>
       <li><a (click)="userLogout()">Logout</a></li>
       <li><a routerLink="cart-page">Cart({{cartItems}})</a></li>
+      
     </ng-container>
     <ng-template #guestLinks>
-      <li><a routerLink="">Home</a></li>
-      <li><a routerLink="seller-auth">Seller</a></li>
-      <li><a routerLink="user-auth">Login/Sign-up</a></li>
-      <li><a routerLink="cart-page">Cart({{cartItems}})</a></li>
-      <li><a routerLink="contact-us">Contact Us</a></li>
+      <li (click)="toggleMenu()"><a routerLink="">Home</a></li>
+      <li (click)="toggleMenu()"><a routerLink="seller-auth">Seller</a></li>
+      <li (click)="toggleMenu()"><a routerLink="user-auth">Login/Sign-up</a></li>
+      <li (click)="toggleMenu()"><a routerLink="cart-page">Cart({{cartItems}})</a></li>
+      <li (click)="toggleMenu()"><a routerLink="contact-us">Contact Us</a></li>
+      <li (click)="toggleMenu()">x</li>
     </ng-template>
   </ul>
 </nav>
